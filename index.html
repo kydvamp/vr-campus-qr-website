@@ -80,17 +80,58 @@
         </div>
     </section>
 
-    <section id="qr">
-        <div id="card">
-            <h1 id="title-for-qr">Access the Virtual Tour</h1>
-            <p id="subtitle-for-qr">Download the official mobile application and scan the QR code inside the app to begin exploring the campus.</p>
-            <div id="qr-image">
-                <img src="images/qr-code.jpg" alt="QR Code">
+    
+<section id="qr">
+    <div id="card">
+        <h1 id="title-for-qr">Access the Virtual Tour</h1>
+
+        <p id="subtitle-for-qr">
+            Download the official mobile application and scan
+            the QR code inside the app to begin exploring the campus.
+        </p>
+
+        <div id="qr-grid">
+            <div class="qr-item" data-qr="Preschool">
+                <h3>Pre-school</h3>
+                <div class="qr-image">
+                    <img src="images/pre-school-qr.png" alt="QR 1">
+                </div>
             </div>
-            <button id="download-button">Download App</button>
-            <p id="note">Compatible with Android 8.0 and above</p>
+
+            <div class="qr-item" data-qr="Elementary">
+                <h3>Elementary</h3>
+                <div class="qr-image">
+                    <img src="images/elementary-qr.png" alt="QR 2">
+                </div>
+            </div>
+
+            <div class="qr-item" data-qr="Senior Highschool">
+                <h3>Senior Highschool</h3>
+                <div class="qr-image">
+                    <img src="images/shs-qr.png" alt="QR 3">
+                </div>
+            </div>
         </div>
-    </section>
+
+        <button id="download-button">Download App</button>
+        <p id="note">Compatible with Android 8.0 and above</p>
+    </div>
+</section>
+
+<!-- Zoomed QR popup -->
+<div id="qr-modal" class="qr-modal" aria-hidden="true">
+    <div class="qr-modal-card" role="dialog"
+         aria-modal="true" aria-labelledby="qr-modal-title">
+
+        <button id="qr-close" class="qr-close"
+                aria-label="Close QR preview">&times;</button>
+
+        <h2 id="qr-modal-title">Pre-school</h2>
+        <img id="qr-modal-image" src="" alt="Zoomed QR code">
+        <p>Click outside the card or press Escape to close.</p>
+    </div>
+</div>
+
 
 <!----
     <section id="highlights">
